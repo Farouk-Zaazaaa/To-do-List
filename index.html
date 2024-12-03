@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <!-- media style -->
+    <link rel="stylesheet" href="Css/media.css" />
+</head>
+<body>
+
+    <header class="container">
+        <div class=" header-container py-3 d-flex justify-content-between">
+            <h2 class="w-50"><i class="fas fa-clipboard-check"></i> To-do List</h2>
+            <div>
+                <input id="userSearch" type="text" class="form-control"  placeholder="Search....">
+            </div>
+            <div class="input-group mb-3 w-25">
+                <input id="userInput" type="text" class="form-control" placeholder="I need...." >
+                <button class="btn btn-secondary" type="button" onclick="addNote()"  id="mainBtn" disabled>Submit</button>
+            </div>
+        </div>
+    </header>
+    
+
+    
+    <div id="validationAlert" class="alert alert-danger w-25 mb-5 m-auto d-none"  role="alert">
+        at least 3 letters
+    </div>
+
+
+
+    <section >
+        <div class=" container "id="home">
+            <!-- <div
+        class="home-item mb-2 px-3  text-dark mx-auto w-25 bg-white d-flex justify-content-between align-items-center">
+        <p id="x">${contacts[i]}</p>
+            <div class=" w-25 d-flex justify-content-between align-items-center">
+                <i class=" fa-sharp fa-solid fa-trash" onclick="deleterow(${ i })"></i>
+                <i class="fa-solid fa-pen-to-square" onclick="updateRow(${ i })"></i>
+            </div>
+        </div> -->
+        </div>
+    </section>
+
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
